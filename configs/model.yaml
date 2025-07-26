@@ -1,0 +1,12 @@
+# config/model.yaml
+model:
+  name: spiking_resnet
+  # these get passed into BaseModel.from_cfg or directly as kwargs
+  layers: [1, 1, 1, 1]            # your ResNet depth
+  signal_channels: 1             # input PPG channel count
+  n_steps: 8
+  initial_channels: 32
+  encoding: false
+  spike_grad:    # we’ll interpret this in code as surrogate.atan(alpha)
+    alpha: 5
+  dropout: 0.2

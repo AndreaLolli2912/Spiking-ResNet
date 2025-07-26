@@ -1,0 +1,5 @@
+preprocessing:
+  feature_scaling: true
+  feature_scaler: StandardScaler
+  target_scaling: false
+  target_scaler: StandardScaler

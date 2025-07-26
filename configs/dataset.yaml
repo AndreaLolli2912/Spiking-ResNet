@@ -1,0 +1,12 @@
+# Config for your PPG dataset & DataLoader
+dataset:
+  bcg:
+    paths:
+      signal_folds: "datasets/bcg_dataset/signal_data"
+      tabular_folds: "datasets/bcg_dataset/tabular_data"
+    n_folds: 5
+
+
+  extreme_aug: false
+  extreme_quantile: 0.05
+  n_aug_per_extreme: 2

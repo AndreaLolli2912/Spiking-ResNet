@@ -1,0 +1,25 @@
+# config/train.yaml
+training:
+  # data loader
+  batch_size: 256
+  # training regime
+  n_epochs: 50
+  # loss function
+  loss: SmoothL1Loss
+  # optimizer
+  optimizer:
+    lr: 6e-05
+    weight_decay: 1e-3
+  # learning rate scheduler
+  scheduler:
+      lr:                3e-3
+      div_factor: 50
+      pct_start: 0.5
+      final_div_factor: 1e3
+  # early stopping criteria
+  early_stopping:
+    patience:          10
+    delta:             0.0
+  # some shit
+  log_interval:      5
+  
